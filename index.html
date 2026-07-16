@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Élise Lemercier — Psychologue Clinicienne à Lyon & Téléconsultation</title>
+  
+  <meta name="description" content="Cabinet de psychologie d'Élise Lemercier. Accompagnement bienveillant pour adultes et adolescents : anxiété, burn-out, deuil, estime de soi. Consultations à Lyon et en visio.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Élise Lemercier — Psychologue Clinicienne">
+  <meta property="og:description" content="Un espace d'écoute et d'apaisement pour déposer ce qui pèse. Thérapies individuelles en cabinet et en ligne.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.elise-lemercier-psy.fr">
+  
+  <!-- Favicon (Fallback) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%238A9B8E'/%3E%3C/svg%3E" type="image/svg+xml">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JSON-LD Structuré pour SEO Local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Psychologist",
+    "name": "Élise Lemercier",
+    "image": "https://www.elise-lemercier-psy.fr/assets/img/portrait.svg",
+    "description": "Psychologue clinicienne spécialisée dans les thérapies de soutien, TCC, gestion de l'anxiété et burn-out.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "18 Rue de la République",
+      "addressLocality": "Lyon",
+      "postalCode": "69002",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "45.7622",
+      "longitude": "4.8351"
+    },
+    "telephone": "+33612345678",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "priceRange": "70€"
+  }
+  </script>
+</head>
+<body data-theme="cream">
+
+  <!-- Accessibilité : Aller au contenu principal -->
+  <a href="#main-content" class="skip-to-content">Aller au contenu principal</a>
+
+  <!-- Curseur personnalisé (Desktop uniquement) -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+  <!-- Préloader "Respiration" -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-container">
+      <div class="loader-circle"></div>
+      <div class="loader-text">Prendre un instant pour respirer...</div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <a href="index.html" class="site-logo" aria-label="Accueil cabinet Élise Lemercier">
+      Élise Lemercier<span class="site-logo-dot"></span>
+    </a>
+    
+    <nav class="site-nav" aria-label="Navigation principale">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Accueil</a></li>
+        <li><a href="approche.html" class="nav-link">Mon approche</a></li>
+        <li><a href="consultations.html" class="nav-link">Consultations</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a href="contact.html" class="btn btn-secondary">Prendre rendez-vous</a>
+    </div>
+
+    <!-- Burger Mobile -->
+    <button class="burger-menu" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+  </header>
+
+  <!-- Overlay Menu Mobile -->
+  <div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
+    <nav aria-label="Navigation mobile">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
+        <li><a href="approche.html" class="mobile-nav-link">Mon approche</a></li>
+        <li><a href="consultations.html" class="mobile-nav-link">Consultations</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact & Accès</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-contact-info">
+      <p>Cabinet de Lyon : 18 Rue de la République, 69002 Lyon</p>
+      <p>Téléphone : 06 12 34 56 78</p>
+      <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%;">Prendre RDV en ligne</a>
+    </div>
+  </div>
+
+  <!-- Contenu Principal -->
+  <main id="main-content">
+
+    <!-- VIDÉO D'AMBIANCE (fond fixe, visible jusqu'aux Champs d'accompagnement) -->
+    <div class="video-bg" id="video-bg" aria-hidden="true">
+      <video autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="assets/video/hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="video-bg-overlay"></div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero on-video" data-theme="cream">
+      <div class="bg-blob-container">
+        <!-- Blob respirant en arrière-plan -->
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="bg-blob bg-blob-1">
+          <path id="hero-blob-path" d="M100,20 C140,20 180,60 180,100 C180,140 140,180 100,180 C60,180 20,140 20,100 C20,60 60,20 100,20 Z" />
+        </svg>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-tagline" style="opacity: 0; transform: translateY(20px);">Élise Lemercier · Psychologue clinicienne</span>
+          <h1 class="hero-title">
+            Un espace pour déposer ce qui pèse.
+          </h1>
+          <p class="hero-description" style="opacity: 0; transform: translateY(20px);">
+            Je vous accueille au sein d'un cabinet chaleureux ou en téléconsultation, pour traverser ensemble vos moments de doute, d'anxiété ou de transition.
+          </p>
+          <div class="hero-actions" style="opacity: 0; transform: translateY(20px);">
+            <a href="contact.html" class="btn btn-primary">Prendre rendez-vous</a>
+            <a href="approche.html" class="btn btn-secondary">Découvrir mon approche</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper" style="opacity: 0; scale: 0.95; transform: translateY(20px);">
+          <div class="hero-arche-mask">
+            <!-- Illustration Cabinet Vectorielle Zen (Évite image stock grise) -->
+            <svg viewBox="0 0 400 500" class="hero-image-placeholder" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration zen d'un cabinet de thérapie avec un fauteuil confortable et une plante verte">
+              <rect width="100%" height="100%" fill="#FAF6F0"/>
+              <circle cx="200" cy="200" r="120" fill="#E8DFD3" opacity="0.6"/>
+              <!-- Fauteuil minimaliste -->
+              <path d="M140,320 H260 M160,320 V380 M240,320 V380 M170,250 C170,220 230,220 230,250 V320 H170 Z" stroke="#2E3532" stroke-width="2.5" fill="none"/>
+              <!-- Branche végétale -->
+              <path d="M260,380 C270,330 305,290 320,250" stroke="#8A9B8E" stroke-width="2.5" fill="none"/>
+              <path d="M320,250 C325,245 330,245 335,250 C330,255 325,255 320,250 Z" fill="#8A9B8E"/>
+              <path d="M300,290 C305,285 310,285 315,290 C310,295 305,295 300,290 Z" fill="#8A9B8E"/>
+              <path d="M280,330 C285,325 290,325 295,330 C290,335 285,335 280,330 Z" fill="#8A9B8E"/>
+              <!-- Lignes fluides au sol -->
+              <path d="M50,440 Q200,380 350,440" stroke="#C6876F" stroke-width="1.5" fill="none" opacity="0.7"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANDEAU DE RÉASSURANCE -->
+    <section class="reassurance on-video" aria-label="Informations clés de consultation">
+      <div class="container">
+        <div class="reassurance-list">
+          <div class="reassurance-item">
+            <div class="reassurance-icon" aria-hidden="true">
+              <!-- Icône Cabinet & Visio -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <p class="reassurance-text">Cabinet à Lyon & Téléconsultation</p>
+          </div>
+          <div class="reassurance-item">
+            <div class="reassurance-icon" aria-hidden="true">
+              <!-- Icône Cible -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <p class="reassurance-text">Adultes, adolescents & couples</p>
+          </div>
+          <div class="reassurance-item">
+            <div class="reassurance-icon" aria-hidden="true">
+              <!-- Icône Téléphone -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <p class="reassurance-text">Premier échange téléphonique gratuit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRÉSENTATION COURTE -->
+    <section class="presentation reveal-on-scroll on-video" data-theme="cream">
+      <div class="container presentation-grid">
+        <div class="presentation-image-wrapper">
+          <div class="presentation-mask">
+            <!-- Portrait Abstrait Vectoriel -->
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration artistique minimaliste représentant Élise Lemercier">
+              <circle cx="200" cy="200" r="140" fill="#D9E0DB" opacity="0.6"/>
+              <!-- Line art doux visage et nature -->
+              <path d="M160,130 C175,100 215,95 235,120 C245,135 240,165 225,180 C215,190 215,200 220,210 C230,230 210,250 185,250 C160,250 150,230 160,210 C165,200 165,190 155,180 C140,165 135,135 160,130 Z" stroke="#2E3532" stroke-width="2" fill="none"/>
+              <path d="M230,125 C240,115 250,120 250,130 C240,140 230,135 230,125 Z" fill="#C6876F"/>
+              <path d="M185,250 C185,280 160,310 140,320" stroke="#8A9B8E" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="presentation-content">
+          <span class="hero-tagline">À propos</span>
+          <h2>Une écoute active et <span class="italic-emotional">sans jugement</span> pour avancer.</h2>
+          <p>
+            Diplômée en Psychologie Clinique et formée aux Thérapies Cognitives et Comportementales (TCC), je mets au cœur de ma pratique la bienveillance, la collaboration active et le respect du rythme de chacun.
+          </p>
+          <p>
+            Chaque accompagnement est unique. Nous travaillerons ensemble pour identifier les mécanismes de votre souffrance et développer des outils concrets et adaptés à votre vie quotidienne.
+          </p>
+
+          <div style="display: flex; gap: 2.5rem; margin-top: var(--space-md); margin-bottom: var(--space-md);">
+            <div>
+              <span class="counter-val" data-target="12" data-suffix=" ans" style="font-family: var(--font-title); font-size: 2.5rem; color: var(--terracotta); font-weight: 500;">0</span>
+              <p style="font-size: 0.875rem; color: var(--ink); opacity: 0.7; margin-bottom: 0;">d'expérience clinique</p>
+            </div>
+            <div>
+              <span class="counter-val" data-target="1500" data-suffix="+" style="font-family: var(--font-title); font-size: 2.5rem; color: var(--terracotta); font-weight: 500;">0</span>
+              <p style="font-size: 0.875rem; color: var(--ink); opacity: 0.7; margin-bottom: 0;">personnes accompagnées</p>
+            </div>
+          </div>
+
+          <div class="signature-container">
+            <!-- Signature manuscrite vectorielle animée -->
+            <svg class="signature-svg" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20,50 Q40,20 60,45 T100,30 T140,55 T180,35 Q140,65 110,60" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,5 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- VALEURS / PILIERS DE LA PRATIQUE -->
+    <section class="pillars reveal-on-scroll on-video" data-theme="cream" aria-label="Piliers de ma pratique">
+      <div class="container">
+        <div style="max-width: 620px; margin: 0 auto; text-align: center; margin-bottom: var(--space-lg);">
+          <span class="hero-tagline" style="justify-content: center;">Mes engagements</span>
+          <h2>Trois piliers pour <span class="italic-emotional">un cadre juste</span></h2>
+          <p>Ces principes fondent chaque séance et garantissent un espace protégé, respectueux du rythme intérieur.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <div class="pillar-illu" aria-hidden="true">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="55" fill="#D9E0DB" opacity="0.5"/>
+                <path d="M40,70 Q60,50 80,70" stroke="#2E3532" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <circle cx="45" cy="55" r="3" fill="#2E3532"/>
+                <circle cx="75" cy="55" r="3" fill="#2E3532"/>
+                <path d="M30,45 Q35,25 55,30" stroke="#8A9B8E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <path d="M90,45 Q85,25 65,30" stroke="#8A9B8E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Écoute inconditionnelle</h3>
+            <p>Aucune parole n'est jugée. Le cabinet est un espace où vos émotions les plus difficiles peuvent exister sans être minimisées.</p>
+            <span class="pillar-tag">Bienveillance</span>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-illu" aria-hidden="true">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="55" fill="#E8DFD3" opacity="0.7"/>
+                <path d="M60,25 L60,95 M35,60 L85,60" stroke="#C6876F" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="60" cy="60" r="18" fill="none" stroke="#2E3532" stroke-width="2"/>
+                <circle cx="60" cy="60" r="4" fill="#C6876F"/>
+              </svg>
+            </div>
+            <h3>Cadre déontologique</h3>
+            <p>Confidentialité absolue, respect du Code de déontologie des psychologues, transparence sur les tarifs et la durée du suivi.</p>
+            <span class="pillar-tag">Secret professionnel</span>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-illu" aria-hidden="true">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="55" fill="#D9E0DB" opacity="0.5"/>
+                <path d="M35,80 Q50,60 60,60 T85,40" stroke="#8A9B8E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <circle cx="35" cy="80" r="4" fill="#2E3532"/>
+                <circle cx="60" cy="60" r="4" fill="#2E3532"/>
+                <circle cx="85" cy="40" r="4" fill="#C6876F"/>
+                <path d="M80,35 L90,35 M85,30 L85,40" stroke="#C6876F" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Approche évolutive</h3>
+            <p>Nous ajustons la méthode à ce que vous vivez : parfois une écoute soutenue, parfois des outils concrets et un travail actif.</p>
+            <span class="pillar-tag">Sur-mesure</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,35 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- DOMAINES D'ACCOMPAGNEMENT -->
+    <section class="domains reveal-on-scroll" data-theme="sand" id="domaines">
+      <div class="bg-blob-container">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="bg-blob bg-blob-2">
+          <path id="bg-blob-path-1" d="M100,20 C140,20 180,60 180,100 C180,140 140,180 100,180 C60,180 20,140 20,100 C20,60 60,20 100,20 Z" />
+        </svg>
+      </div>
+
+      <div class="container">
+        <div style="max-width: 600px;">
+          <span class="hero-tagline">Expertises</span>
+          <h2>Champs d'accompagnement</h2>
+          <p>La souffrance psychologique s'exprime de nombreuses manières. Voici les principaux motifs pour lesquels vous pouvez me consulter.</p>
+        </div>
+
+        <div class="domains-grid">
+          <!-- Carte 1 -->
+          <div class="domain-card">
+            <div class="domain-card-icon">
+              <!-- Icône Fines Lignes Nuage / Anxiété -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.5 19A3.5 3.5 0 0 0 21 15.5c0-2.79-2.54-4.5-5-4.5-.42 0-.83.07-1.22.2A5 5 0 0 0 5 13c0 .34.03.68.1 1A4.5 4.5 0 0 0 8.5 19Z"/></svg>
+            </div>
+            <h3>Anxiété & Stress</h3>
+            <p>Crises d'angoisse, phobies, stress chronique, pensées envahissantes. Retrouver un souffle de sérénité.</p>
+          </div>
+          <!-- Carte 2 -->
+          <div class="domain-card">
+            <div class="domain-card-icon">
+              <!-- Icône Batterie vide / Burn-out -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="16" height="10" rx="2" ry="2"/><line x1="22" y1="11" x2="22" y2="13"/></svg>
+            </div>
+            <h3>Burn-out & Épuisement</h3>
+            <p>Surcharge professionnelle ou parentale, fatigue physique et mentale. Apprendre à poser des limites.</p>
+          </div>
+          <!-- Carte 3 -->
+          <div class="domain-card">
+            <div class="domain-card-icon">
+              <!-- Icône Fleur cassée / Deuil -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.5 2 2 6.5 2 12c0 2.5 1 4.8 2.6 6.4L12 11l7.4 7.4c1.6-1.6 2.6-3.9 2.6-6.4 0-5.5-4.5-10-10-10Z"/></svg>
+            </div>
+            <h3>Deuil & Pertes</h3>
+            <p>Accompagnement après la perte d'un proche, une rupture douloureuse ou une perte d'emploi. Reconstruire son repère.</p>
+          </div>
+          <!-- Carte 4 -->
+          <div class="domain-card">
+            <div class="domain-card-icon">
+              <!-- Icône Cœur / Estime de soi -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Estime de soi</h3>
+            <p>Confiance altérée, peur du rejet, syndrome de l'imposteur. Mettre en valeur vos ressources uniques.</p>
+          </div>
+          <!-- Carte 5 -->
+          <div class="domain-card">
+            <div class="domain-card-icon">
+              <!-- Icône Boussole / Transitions -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <h3>Transitions de vie</h3>
+            <p>Séparation, maladie, réorientation, parentalité. S'adapter aux bouleversements et trouver une voie.</p>
+          </div>
+          <!-- Carte 6 -->
+          <div class="domain-card">
+            <div class="domain-card-icon">
+              <!-- Icône Adolescence -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5z M6 13a6 6 0 0 0-3 5.19v1.81h18v-1.81A6 6 0 0 0 18 13"/></svg>
+            </div>
+            <h3>Adolescence</h3>
+            <p>Difficultés scolaires, repli, troubles relationnels, crises d'identité. Accompagner la transition vers l'âge adulte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,35 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- POUR QUI ? PERSONAS -->
+    <section class="personas reveal-on-scroll" data-theme="cream" aria-label="Publics accompagnés">
+      <div class="container">
+        <div style="max-width: 620px; margin-bottom: var(--space-lg);">
+          <span class="hero-tagline">Pour qui ?</span>
+          <h2>Un accompagnement <span class="italic-emotional">pensé pour chacun</span></h2>
+          <p>Que vous soyez adulte, adolescent ou en couple, la démarche s'adapte à votre situation, votre âge et votre contexte de vie.</p>
+        </div>
+
+        <div class="personas-grid">
+          <article class="persona-card" data-persona="adult">
+            <div class="persona-illu" aria-hidden="true">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="200" fill="#FAF6F0"/>
+                <circle cx="100" cy="90" r="70" fill="#E8DFD3" opacity="0.6"/>
+                <circle cx="100" cy="85" r="22" fill="none" stroke="#2E3532" stroke-width="2"/>
+                <path d="M65,150 C65,120 135,120 135,150 L135,180 L65,180 Z" fill="none" stroke="#2E3532" stroke-width="2"/>
+                <path d="M40,60 Q50,45 60,55" stroke="#8A9B8E" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M155,55 Q165,45 175,60" stroke="#C6876F" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <circle cx="45" cy="55" r="3" fill="#8A9B8E"/>
+                <circle cx="170" cy="55" r="3" fill="#C6876F"/>
+              </svg>
+            </div>
+            <div class="persona-body">
+              <h3>Adultes</h3>
+              <p>Vie professionnelle, relations, parentalité, quête de sens. Une thérapie pour reprendre pied et clarifier vos priorités.</p>
+              <ul class="persona-tags">
+                <li>Anxiété</li><li>Burn-out</li><li>Estime de soi</li><li>Deuil</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="persona-card" data-persona="teen">
+            <div class="persona-illu" aria-hidden="true">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="200" fill="#FAF6F0"/>
+                <circle cx="100" cy="90" r="70" fill="#D9E0DB" opacity="0.6"/>
+                <path d="M75,80 Q100,55 125,80 L125,105 Q100,120 75,105 Z" fill="none" stroke="#2E3532" stroke-width="2"/>
+                <circle cx="88" cy="90" r="2.5" fill="#2E3532"/>
+                <circle cx="112" cy="90" r="2.5" fill="#2E3532"/>
+                <path d="M90,102 Q100,108 110,102" stroke="#2E3532" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <path d="M70,140 L130,140 L120,180 L80,180 Z" fill="none" stroke="#2E3532" stroke-width="2"/>
+                <path d="M100,140 L100,180" stroke="#C6876F" stroke-width="1.5"/>
+                <circle cx="155" cy="60" r="8" fill="#C6876F" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="persona-body">
+              <h3>Adolescents (12–18 ans)</h3>
+              <p>Une écoute adaptée à leur langage, sans jugement des parents. Un espace bien à eux pour poser leurs doutes et leurs colères.</p>
+              <ul class="persona-tags">
+                <li>Scolarité</li><li>Identité</li><li>Sommeil</li><li>Écrans</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="persona-card" data-persona="couple">
+            <div class="persona-illu" aria-hidden="true">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="200" fill="#FAF6F0"/>
+                <circle cx="100" cy="90" r="75" fill="#E8DFD3" opacity="0.5"/>
+                <circle cx="75" cy="85" r="18" fill="none" stroke="#2E3532" stroke-width="2"/>
+                <circle cx="125" cy="85" r="18" fill="none" stroke="#2E3532" stroke-width="2"/>
+                <path d="M45,155 C45,125 105,125 105,155 L105,175 L45,175 Z" fill="none" stroke="#2E3532" stroke-width="2"/>
+                <path d="M95,155 C95,125 155,125 155,155 L155,175 L95,175 Z" fill="none" stroke="#2E3532" stroke-width="2"/>
+                <path d="M100,40 C100,30 88,25 88,35 C88,45 100,55 100,55 C100,55 112,45 112,35 C112,25 100,30 100,40 Z" fill="#C6876F"/>
+              </svg>
+            </div>
+            <div class="persona-body">
+              <h3>Couples</h3>
+              <p>Communication rompue, désir en berne, crises répétées. Un tiers neutre pour renouer un dialogue apaisé et respectueux.</p>
+              <ul class="persona-tags">
+                <li>Communication</li><li>Confiance</li><li>Sexualité</li><li>Projets</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,5 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- COMMENT ÇA SE PASSE -->
+    <section class="process reveal-on-scroll" data-theme="cream" id="deroulement">
+      <div class="container">
+        <div style="max-width: 600px; margin: 0 auto; text-align: center; margin-bottom: var(--space-lg);">
+          <span class="hero-tagline" style="justify-content: center;">Méthodologie</span>
+          <h2>Le déroulement des consultations</h2>
+          <p>Une démarche simple et transparente, conçue pour être la plus fluide possible pour vous.</p>
+        </div>
+
+        <div class="process-list">
+          <div class="process-step">
+            <span class="process-step-num">01</span>
+            <h3>Premier contact</h3>
+            <p>Par téléphone ou directement en ligne. Nous faisons un bref point sur vos besoins et fixons une première séance selon vos disponibilités.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step-num">02</span>
+            <h3>Première séance</h3>
+            <p>Un temps d'accueil et d'échange libre. Nous faisons connaissance, clarifions votre demande et définissons ensemble les objectifs de suivi.</p>
+          </div>
+          <div class="process-step">
+            <span class="process-step-num">03</span>
+            <h3>Suivi & outils</h3>
+            <p>Les séances suivantes se font à un rythme adapté (hebdomadaire ou bimensuel). Nous évaluons régulièrement les progrès et adaptons les méthodes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,5 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- MODALITÉS : CABINET vs VISIO -->
+    <section class="modalities reveal-on-scroll" data-theme="mist" aria-label="Modalités de consultation">
+      <div class="container">
+        <div style="max-width: 620px; margin: 0 auto; text-align: center; margin-bottom: var(--space-lg);">
+          <span class="hero-tagline" style="justify-content: center;">Deux formats</span>
+          <h2>Consulter <span class="italic-emotional">à votre manière</span></h2>
+          <p>Au cabinet lyonnais dans un cadre chaleureux, ou depuis chez vous en visioconférence sécurisée.</p>
+        </div>
+
+        <div class="modalities-grid">
+          <article class="modality-card">
+            <div class="modality-visual" aria-hidden="true">
+              <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="260" fill="#FAF6F0"/>
+                <rect x="20" y="40" width="360" height="200" rx="12" fill="#E8DFD3" opacity="0.5"/>
+                <path d="M60,180 C60,150 90,140 100,155 L100,220 L60,220 Z" fill="#8A9B8E" opacity="0.7"/>
+                <path d="M300,180 C300,150 330,140 340,155 L340,220 L300,220 Z" fill="#C6876F" opacity="0.7"/>
+                <rect x="150" y="150" width="100" height="70" rx="8" fill="#2E3532" opacity="0.15"/>
+                <circle cx="200" cy="90" r="30" fill="#FAF6F0" stroke="#8A9B8E" stroke-width="2"/>
+                <path d="M185,90 Q200,105 215,90" stroke="#2E3532" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                <line x1="200" y1="120" x2="200" y2="150" stroke="#2E3532" stroke-width="1.5" opacity="0.4" stroke-dasharray="3,3"/>
+              </svg>
+            </div>
+            <div class="modality-body">
+              <span class="modality-tag">Cabinet · Lyon 2</span>
+              <h3>Consultation en présentiel</h3>
+              <p>Un espace lumineux et insonorisé au cœur de la Presqu'île, à quelques pas du métro Bellecour. Fauteuil confortable, plantes et lumière tamisée.</p>
+              <ul class="modality-details">
+                <li><strong>Adresse :</strong> 18 Rue de la République, 69002</li>
+                <li><strong>Durée :</strong> 50 min · 70 €</li>
+                <li><strong>Accès :</strong> M° A/D · Parking Cordeliers</li>
+              </ul>
+              <a href="contact.html" class="link-underlined">Réserver au cabinet</a>
+            </div>
+          </article>
+
+          <article class="modality-card">
+            <div class="modality-visual" aria-hidden="true">
+              <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="260" fill="#FAF6F0"/>
+                <rect x="60" y="50" width="280" height="170" rx="14" fill="#D9E0DB" opacity="0.6"/>
+                <rect x="80" y="70" width="240" height="130" rx="6" fill="#FAF6F0" stroke="#2E3532" stroke-width="1.5"/>
+                <circle cx="140" cy="135" r="22" fill="none" stroke="#8A9B8E" stroke-width="2"/>
+                <path d="M118,175 C118,155 162,155 162,175" fill="none" stroke="#8A9B8E" stroke-width="2"/>
+                <circle cx="260" cy="135" r="22" fill="none" stroke="#C6876F" stroke-width="2"/>
+                <path d="M238,175 C238,155 282,155 282,175" fill="none" stroke="#C6876F" stroke-width="2"/>
+                <rect x="180" y="225" width="40" height="8" rx="2" fill="#2E3532"/>
+                <path d="M195,90 L205,90 M200,85 L200,95" stroke="#2E3532" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="modality-body">
+              <span class="modality-tag">Visio · Partout en France</span>
+              <h3>Téléconsultation sécurisée</h3>
+              <p>Idéale si vous vivez loin, voyagez souvent ou souhaitez la discrétion de votre domicile. Même qualité d'écoute, même cadre thérapeutique.</p>
+              <ul class="modality-details">
+                <li><strong>Plateforme :</strong> chiffrée & RGPD</li>
+                <li><strong>Durée :</strong> 50 min · 70 €</li>
+                <li><strong>Prérequis :</strong> connexion stable, pièce calme</li>
+              </ul>
+              <a href="contact.html" class="link-underlined">Réserver en visio</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,35 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- PARCOURS & FORMATIONS (TIMELINE) -->
+    <section class="timeline-section reveal-on-scroll" data-theme="cream" aria-label="Parcours et formations">
+      <div class="container">
+        <div style="max-width: 620px; margin-bottom: var(--space-lg);">
+          <span class="hero-tagline">Parcours</span>
+          <h2>Une <span class="italic-emotional">formation continue</span> depuis 2012</h2>
+          <p>Diplômes universitaires reconnus, supervisions régulières et formations complémentaires pour un accompagnement à jour des connaissances cliniques.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2012</span>
+              <h3>Master 2 Psychologie Clinique</h3>
+              <p>Université Lumière Lyon 2 · Mention Très Bien. Mémoire consacré aux mécanismes de résilience post-traumatique.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2013 — 2016</span>
+              <h3>Psychologue en CMP</h3>
+              <p>Centre médico-psychologique de Villeurbanne. Suivi d'adultes et d'adolescents en secteur public, travail en équipe pluridisciplinaire.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2017</span>
+              <h3>Diplôme Universitaire de TCC</h3>
+              <p>Faculté de médecine Lyon Est. Approche cognitivo-comportementale : anxiété, phobies, TOC, protocoles validés.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2019</span>
+              <h3>Ouverture du cabinet libéral</h3>
+              <p>Installation au 18 Rue de la République, Lyon 2. Développement d'une pratique intégrative en cabinet et en téléconsultation.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2021 — 2024</span>
+              <h3>Formations complémentaires</h3>
+              <p>EMDR niveau 1 · Thérapie ACT · Approche systémique du couple. Supervision mensuelle en groupe de pairs.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Aujourd'hui</span>
+              <h3>+ de 1 500 personnes accompagnées</h3>
+              <p>Membre de la Fédération Française des Psychologues et de Psychologie (FFPP). Numéro ADELI 699312345.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,5 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- TÉMOIGNAGES -->
+    <section class="testimonials reveal-on-scroll" data-theme="mist" aria-label="Témoignages de patients anonymisés">
+      <div class="container">
+        <div class="testimonials-container">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <p class="testimonial-quote">« J'ai trouvé auprès de Mme Lemercier un espace d'écoute rare, d'une grande douceur. Ses outils de gestion de l'anxiété m'aident encore chaque jour. »</p>
+            <span class="testimonial-author">Sophie, 34 ans — Suivi pour troubles anxieux</span>
+          </div>
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <p class="testimonial-quote">« Un accompagnement précieux lors de mon épuisement professionnel. Grâce à sa bienveillance, j'ai pu réapprendre à m'écouter et à poser des limites claires. »</p>
+            <span class="testimonial-author">Thomas, 42 ans — Accompagné pour burn-out</span>
+          </div>
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <p class="testimonial-quote">« Son approche active m'a beaucoup rassurée. On ne fait pas que parler, on cherche des clés concrètes. Mon fils adolescent s'est également senti tout de suite en confiance. »</p>
+            <span class="testimonial-author">Nathalie, 48 ans — Maman de Lucas, 16 ans</span>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="testimonial-dot active" aria-label="Voir le témoignage 1"></button>
+          <button class="testimonial-dot" aria-label="Voir le témoignage 2"></button>
+          <button class="testimonial-dot" aria-label="Voir le témoignage 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,35 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- JOURNAL / RESSOURCES -->
+    <section class="journal reveal-on-scroll" data-theme="cream" aria-label="Journal et ressources">
+      <div class="container">
+        <div class="journal-header">
+          <div style="max-width: 600px;">
+            <span class="hero-tagline">Le Journal</span>
+            <h2>Ressources <span class="italic-emotional">à lire au calme</span></h2>
+            <p>Articles courts, exercices et repères pour prendre soin de vous entre les séances.</p>
+          </div>
+          <a href="#" class="btn btn-secondary journal-cta-desktop">Voir tous les articles</a>
+        </div>
+
+        <div class="journal-grid">
+          <article class="journal-card">
+            <div class="journal-visual" aria-hidden="true">
+              <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#E8DFD3"/>
+                <circle cx="120" cy="130" r="70" fill="#8A9B8E" opacity="0.5"/>
+                <path d="M60,180 Q120,140 180,180 T300,180" stroke="#FAF6F0" stroke-width="3" fill="none"/>
+                <circle cx="280" cy="90" r="30" fill="#FAF6F0" opacity="0.8"/>
+                <path d="M270,90 Q280,80 290,90 Q285,100 280,95 Q275,100 270,90 Z" fill="#C6876F"/>
+              </svg>
+            </div>
+            <div class="journal-body">
+              <span class="journal-meta">Anxiété · 5 min de lecture</span>
+              <h3>La respiration 4-7-8, un allié anti-panique</h3>
+              <p>Un exercice simple, à pratiquer partout, pour ralentir le rythme cardiaque et calmer les pensées envahissantes.</p>
+              <a href="#" class="link-underlined">Lire l'article</a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-visual" aria-hidden="true">
+              <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#D9E0DB"/>
+                <path d="M0,180 Q100,120 200,180 T400,160 L400,240 L0,240 Z" fill="#8A9B8E" opacity="0.6"/>
+                <circle cx="300" cy="70" r="35" fill="#FAF6F0"/>
+                <path d="M285,70 Q300,55 315,70" stroke="#C6876F" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <line x1="100" y1="60" x2="180" y2="60" stroke="#FAF6F0" stroke-width="2" stroke-linecap="round"/>
+                <line x1="100" y1="80" x2="150" y2="80" stroke="#FAF6F0" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="journal-body">
+              <span class="journal-meta">Burn-out · 7 min de lecture</span>
+              <h3>Reconnaître les premiers signaux d'épuisement</h3>
+              <p>Fatigue chronique, cynisme, perte de sens : cinq indices que votre corps essaie de vous alerter avant la rupture.</p>
+              <a href="#" class="link-underlined">Lire l'article</a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-visual" aria-hidden="true">
+              <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#FAF6F0"/>
+                <circle cx="200" cy="120" r="90" fill="#C6876F" opacity="0.4"/>
+                <path d="M170,120 Q200,90 230,120 Q200,150 170,120 Z" fill="#FAF6F0"/>
+                <path d="M200,90 L200,150 M170,120 L230,120" stroke="#2E3532" stroke-width="1.5"/>
+                <circle cx="80" cy="80" r="12" fill="#8A9B8E" opacity="0.7"/>
+                <circle cx="330" cy="180" r="18" fill="#8A9B8E" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="journal-body">
+              <span class="journal-meta">Estime de soi · 6 min de lecture</span>
+              <h3>Sortir du syndrome de l'imposteur</h3>
+              <p>Comprendre d'où vient ce sentiment de ne pas être « à la hauteur » et poser les premières briques d'une confiance durable.</p>
+              <a href="#" class="link-underlined">Lire l'article</a>
+            </div>
+          </article>
+        </div>
+
+        <a href="#" class="btn btn-secondary journal-cta-mobile">Voir tous les articles</a>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,5 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- LOCALISATION & ACCÈS -->
+    <section class="location reveal-on-scroll" data-theme="sand" aria-label="Localisation du cabinet">
+      <div class="container location-grid">
+        <div class="location-content">
+          <span class="hero-tagline">Le cabinet</span>
+          <h2>Au cœur de la <span class="italic-emotional">Presqu'île lyonnaise</span></h2>
+          <p>Un lieu apaisé, à quelques pas de la Place Bellecour, choisi pour son calme malgré la centralité. Idéal pour venir sur votre pause déjeuner ou en sortant du travail.</p>
+
+          <ul class="location-list">
+            <li>
+              <div class="location-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div><strong>Adresse</strong><br>18 Rue de la République, 69002 Lyon<br><small>Bâtiment ancien, code interphone communiqué avant la 1ʳᵉ séance.</small></div>
+            </li>
+            <li>
+              <div class="location-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div><strong>Horaires</strong><br>Lundi — Vendredi · 9h à 19h<br><small>Créneaux du soir jusqu'à 20h30 sur demande.</small></div>
+            </li>
+            <li>
+              <div class="location-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4v16 M15 4v16 M4 9h16 M4 15h16"/></svg>
+              </div>
+              <div><strong>Accès</strong><br>M° A & D — Bellecour (3 min)<br>Vélo'v Cordeliers · Parking République</div>
+            </li>
+          </ul>
+
+          <a href="contact.html" class="btn btn-primary" style="margin-top: var(--space-md);">Voir le plan détaillé</a>
+        </div>
+
+        <div class="location-map-wrapper">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="location-map" aria-label="Carte stylisée du quartier de la Presqu'île à Lyon">
+            <rect width="500" height="500" fill="#FAF6F0"/>
+            <!-- Rhône -->
+            <path d="M480,0 Q460,100 470,200 T460,400 L500,500 L500,0 Z" fill="#D9E0DB" opacity="0.7"/>
+            <!-- Saône -->
+            <path d="M0,0 Q30,120 20,240 T30,500 L0,500 Z" fill="#D9E0DB" opacity="0.7"/>
+            <!-- Places -->
+            <circle cx="250" cy="180" r="45" fill="#E8DFD3"/>
+            <text x="250" y="185" text-anchor="middle" font-family="Fraunces" font-size="12" fill="#2E3532" font-style="italic">Bellecour</text>
+            <circle cx="250" cy="330" r="35" fill="#E8DFD3"/>
+            <text x="250" y="335" text-anchor="middle" font-family="Fraunces" font-size="10" fill="#2E3532" font-style="italic">Cordeliers</text>
+            <!-- Rues -->
+            <line x1="250" y1="0" x2="250" y2="500" stroke="#8A9B8E" stroke-width="3" opacity="0.4"/>
+            <line x1="150" y1="0" x2="150" y2="500" stroke="#8A9B8E" stroke-width="2" opacity="0.3"/>
+            <line x1="350" y1="0" x2="350" y2="500" stroke="#8A9B8E" stroke-width="2" opacity="0.3"/>
+            <line x1="0" y1="180" x2="500" y2="180" stroke="#8A9B8E" stroke-width="2" opacity="0.3"/>
+            <line x1="0" y1="330" x2="500" y2="330" stroke="#8A9B8E" stroke-width="2" opacity="0.3"/>
+            <!-- Pin cabinet -->
+            <g transform="translate(280, 260)">
+              <circle r="30" fill="#C6876F" opacity="0.25">
+                <animate attributeName="r" values="20;40;20" dur="3s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <path d="M0,-18 C-10,-18 -14,-8 -14,0 C-14,10 0,22 0,22 C0,22 14,10 14,0 C14,-8 10,-18 0,-18 Z" fill="#C6876F"/>
+              <circle r="5" cx="0" cy="0" fill="#FAF6F0"/>
+            </g>
+            <text x="280" y="235" text-anchor="middle" font-family="Outfit" font-size="11" fill="#2E3532" font-weight="500">Le Cabinet</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR ONDULÉ -->
+    <div class="wave-container" aria-hidden="true">
+      <svg class="wave-divider" viewBox="0 0 1000 40">
+        <path d="M0,20 Q125,35 250,20 T500,20 T750,20 T1000,20" />
+      </svg>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <section class="faq reveal-on-scroll" data-theme="cream" id="faq">
+      <div class="container">
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+          <span class="hero-tagline" style="justify-content: center;">Questions fréquentes</span>
+          <h2>Des questions sur la thérapie ?</h2>
+          <p>Voici quelques éléments de réponse pour aborder la première consultation en toute sérénité.</p>
+        </div>
+
+        <div class="faq-list">
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-1">
+              <span class="faq-title">Combien de temps dure une séance et quel est le tarif ?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-answer-1" class="faq-content">
+              <p>Une séance individuelle (adulte ou adolescent) dure 50 minutes et son tarif est de 70 €. Les séances de thérapie de couple durent 1h15 et sont facturées 90 €.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-2">
+              <span class="faq-title">Les consultations sont-elles remboursées ?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-answer-2" class="faq-content">
+              <p>La Sécurité sociale ne rembourse pas directement les séances de psychologie libérale, sauf dispositif de conventionnement particulier (comme Mon Soutien Psy, sur orientation médicale). Cependant, de très nombreuses mutuelles prennent en charge un forfait annuel ou un nombre défini de séances par an. Une facture vous sera fournie à cet effet.</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-3">
+              <span class="faq-title">Comment se déroule la première consultation ?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-answer-3" class="faq-content">
+              <p>La première séance est un entretien d'évaluation. Il s'agit d'un échange informel où vous exprimez ce qui vous amène. Cela nous permet de cerner vos attentes, de poser le cadre de notre travail et de voir si l'approche proposée vous convient. Il n'y a aucune obligation de poursuivre à l'issue de cette séance.</p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-4">
+              <span class="faq-title">Est-il possible de faire des séances en ligne ?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-answer-4" class="faq-content">
+              <p>Oui, je propose des consultations à distance (téléconsultations) via une plateforme sécurisée. Les modalités tarifaires et de durée sont identiques aux séances en présentiel au cabinet.</p>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-5">
+              <span class="faq-title">Quelle est votre politique en matière de confidentialité ?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-answer-5" class="faq-content">
+              <p>En tant que psychologue, je suis soumise au secret professionnel absolu et au respect du code de déontologie des psychologues. Tout ce qui est dit au sein du cabinet reste strictement confidentiel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final reveal-on-scroll" data-theme="sage">
+      <div class="container">
+        <h2>Le premier pas est souvent le plus difficile.</h2>
+        <p>Je vous réponds sous 24 heures par mail ou par téléphone.</p>
+        <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sticky Mobile Phone CTA -->
+  <a href="tel:+33612345678" class="sticky-call-btn" aria-label="Appeler le cabinet">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/>
+    </svg>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Élise Lemercier</h4>
+        <p>Psychologue Clinicienne & Psychothérapeute</p>
+        <p style="margin-top: 0.5rem; line-height: 1.5; font-size: 0.85rem; color: rgba(250, 246, 240, 0.45);">Accompagnement clinique personnalisé pour adultes et adolescents en situation de souffrance psychologique, anxiété, épuisement ou deuil.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h5>Plan du site</h5>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="approche.html">Mon approche</a></li>
+          <li><a href="consultations.html">Prestations & Tarifs</a></li>
+          <li><a href="contact.html">Contact & Accès</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p>Cabinet de Lyon : 18 Rue de la République, 69002 Lyon</p>
+        <p>Téléphone : 06 12 34 56 78</p>
+        <p>Email : contact@elise-lemercier-psy.fr</p>
+        <p>N° ADELI : 699312345 · N° SIRET : 12345678900012</p>
+        
+        <div class="footer-emergency" role="note">
+          <p>En cas d'urgence ou de détresse psychologique immédiate, contactez le numéro national de prévention du suicide : <a href="tel:3114" class="link-underlined"><strong>3114</strong></a> (appel gratuit 24h/24).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Élise Lemercier. Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="404.html">Mentions légales</a>
+        <a href="404.html">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Lenis (Smooth Scroll) -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Scripts Cabinet -->
+  <script src="assets/js/preloader.js"></script>
+  <script src="assets/js/blob-morph.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/video-bg.js"></script>
+</body>
+</html>
